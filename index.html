@@ -1,0 +1,203 @@
+<!--
+Original: https://philipwalton.github.io/solved-by-flexbox/
+
+Things to Fix:
+1.  Random link between buttons
+2.  Sizing and adding png in buttons
+3.  Links in showcase
+4.  Small white space in bottom margin of showcase article images
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Solved by Flexbox - Cleaner, hack-free CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Solved <span class="by">by</span> Flexbox</h1>
+    <p>Cleaner, hack-free CSS</p>
+    <div class="buttoncont">
+      <a href="">
+        <button type="button" class="github">
+          <img src="github.png" alt="" />View Project Source
+        </button>
+      </a>
+      <a href="">
+        <button type="button" class="twitter">
+          <img src="twitter.png" alt="" />Spread the Word
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <section class="introduction">
+    <div class="container">
+      <h1>Introduction</h1>
+      <p>CSS has been lacking proper layout mechanisms for far too long. Transitions, animations, filters, all of these are great and useful additions to the language, but they don't address the major problems that Web developers have been complaining about for what seems like an eternity.</p>
+      <p>Finally, thanks to <a href="#">Flexbox</a>, we have a solution.</p>
+      <p>This site is not another CSS framework. Instead, its purpose is to showcase problems once hard or impossible to solve with CSS alone, now made trivially easy with Flexbox. And with the recent release of Internet Explorer 11 and Safari 6.1, the latest Flexbox spec is now supported in every modern browser.</p>
+      <p>Check out the demos below. View the styles in the Web inspector or dive into <a href="#">the source</a> to see just how easy CSS layout will become once Flexbox becomes mainstream.</p>
+    </div>
+  </section>
+
+
+
+  <section class="showcase">
+    <div class="container">
+      <h1>Showcase</h1>
+      <div class="showcasecont">
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/grids.jpg" alt="" />
+          </div>
+          <h1>Better, Simpler Grid Systems</h1></a>
+          <p>Flexbox gives us most of the features we want from a grid system out of the box. And sizing and alignment are just one or two properties away.</p>
+        </article>
+
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/holy-grail.jpg" alt="" />
+          </div>
+          <h1>Holy Grail Layout</h1></a>
+          <p>This classic problem has been challenging CSS hackers for years, yet none of the historical solutions have fully solved it. With Flexbox, it's finally possible.</p>
+        </article>
+
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/input-add-ons.jpg" alt="" />
+          </div>
+          <h1>Input Add-ons</h1></a>
+          <p>Creating full-width, fluid input/button pairs has been impossible for most of the history of CSS. With Flexbox it couldn't be easier.</p>
+        </article>
+
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/media-object.jpg" alt="" />
+          </div>
+          <h1>Media Object</h1></a>
+          <p>Create media objects with fixed or varying figure sizes without worrying about overflow, clearfixing, or block formatting context hacks.</p>
+        </article>
+
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/sticky-footer.jpg" alt="" />
+          </div>
+          <h1>Sticky Footer</h1></a>
+          <p>Getting your footer to stick to the bottom of sparsely contented pages has always been tricky. And if the footer's height is unknown, it's basically impossible. Not so anymore.</p>
+        </article>
+
+        <article class="piece">
+          <a href="#" class="show">
+          <div class="imgbox">
+            <img src="https://philipwalton.github.io/solved-by-flexbox/images/vertical-centering.jpg" alt="" />
+          </div>
+          <h1>Vertical Centering</h1></a>
+          <p>This classic problem has been challenging CSS hackers for years, yet none of the historical solutions have fully solved it. With Flexbox, it's finally possible.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="support">
+    <div class="container">
+      <h1>Browser Support</h1>
+      <div class="browsercont">
+        <article class="browser">
+          <img src="img/chrome.png" alt="">
+          <p>Chrome</p>
+          <p>21+</p>
+        </article>
+
+        <article class="browser">
+          <img src="img/opera.png" alt="">
+          <p>Opera</p>
+          <p>12.1+</p>
+        </article>
+
+        <article class="browser">
+          <img src="img/firefox.png" alt="">
+          <p>Firefox</p>
+          <p>22+</p>
+        </article>
+
+        <article class="browser">
+          <img src="img/safari.png" alt="">
+          <p>Safari</p>
+          <p>6.1+</p>
+        </article>
+
+        <article class="browser">
+          <img src="img/ie.png" alt="">
+          <p>IE</p>
+          <p>10+</p>
+        </article>
+
+        <article class="browser edge">
+          <img src="img/edge.png" alt="">
+          <p>Edge</p>
+          <p>All</p>
+        </article>
+      </div>
+
+      <article class="caveats">
+        <h1>Caveats and Known Issues</h1>
+        <ul>
+          <li>IE 10 has Flexbox support but for a <a href="#">draft version</a> of the current spec: (<code>display: flexbox</code>)</li>
+          <li>Safari 6 and earlier support the <a href="#">original</a> Flexbox syntax, which is now obsolete (<code>display: box</code>)</li>
+          <li>Firefox 27 and earlier do not support multi-line flexboxes. See <a href="#">this bug</a> for more details.</li>
+          <li>For a full browser support comparison, check out <a href="http://caniuse.com/flexbox">caniuse.com/flexbox</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h1>About the Code</h1>
+      <p>All of the code samples on this site show how to solve a particular design problem with Flexbox. They show just the code that's needed to make the demos work in a spec-compliant browser. Some browsers do not fully comply with the latest version of the spec, so sadly, a few workarounds were necessary.</p>
+      <p>Workarounds for non-compliant browsers are not shown in the code samples, but if you're curious about those implementation details, you can check out the source files. Each demo links to its source, and all browser-specific workarounds are well-documented, so don't be afraid to take a look.</p>
+      <p>The vendor prefixing and translating of current flex properties to their legacy equivalents is all handled by <a href="#">autoprefixer</a>. If you're writing Flexbox code and not using autoprefixer, well, you're making a horrible mistake.</p>
+      <p>The class naming convention used in the code samples and source files is taken from <a href="#">SUIT CSS</a>, which is based on BEM methodologies. Each example includes one or more reusable CSS components allowing you to adapt or copy these patterns in to your own projects. Links are provided to their respective components on each example page.</p>
+      <p>If you find a mistake or would like to suggest an additional example, feel free to open an issue or submit a pull request on <a href="#">Github</a>.</p>
+    </div>
+  </section>
+
+  <section class="translations">
+    <div class="container">
+      <h1>Translations</h1>
+      <p>The following translations have been graciously provided by the community:</p>
+      <ul>
+        <li><a href="#">Chinese</a></li>
+        <li><a href="#">Japanese</a></li>
+        <li><a href="#">Korean</a></li>
+      </ul>
+      <p>Please note that translations are unofficial and may be inaccurate or out of date. To submit your own translation, please submit a <a href="#">pull request</a> or <a href="#">open an issue</a> on Github and link to your translated content.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <span class="Footer-social"><iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=philipwalton&amp;repo=solved-by-flexbox&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="106px" height="20px"></iframe><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.0e55a364e448deca530e9a13f68e1486.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=philwalton&amp;show_count=true&amp;show_screen_name=true&amp;size=m&amp;time=1505355370469" style="position: static; visibility: visible; width: 221px; height: 20px;" data-screen-name="philwalton">
+        </iframe> <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.0e55a364e448deca530e9a13f68e1486.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=https%3A%2F%2Fphilipwalton.github.io%2Fsolved-by-flexbox%2F&amp;related=philwalton%3ACreator%20of%20Solved%20by%20Flexbox&amp;size=m&amp;text=A%20showcase%20of%20traditionally%20hard%20CSS%20problems%2C%20easily%20solved%20using%20flexbox.&amp;time=1505355370471&amp;type=share&amp;url=https%3A%2F%2Fphilipwalton.github.io%2Fsolved-by-flexbox%2F&amp;via=philwalton" style="position: static; visibility: visible; width: 61px; height: 20px;" data-url="https://philipwalton.github.io/solved-by-flexbox/"></iframe></span>
+      </div>
+        <p>Created and maintained by <a href="">Philip Walton.</a> Source code and examples released under the <a href="">MIT</a> license. Website and documentation licensed under <a href="">CC BY 4.0</a>.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
