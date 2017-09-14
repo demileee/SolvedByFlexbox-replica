@@ -1,5 +1,5 @@
 # SolvedByFlexbox-replica
-built a replica of Phillip Walton's 'Solved by Flexbox'
+Built a replica of Phillip Walton's 'Solved by Flexbox'.
 
 Original: https://philipwalton.github.io/solved-by-flexbox/
 
